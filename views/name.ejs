@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SFaraz.</title>
-    <link rel="icon" href="/img/link.PNG">
+    <link rel="icon" href="/img/link.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
@@ -43,6 +43,7 @@
             <h1 class="text-light font-weight-bold title">
                 <%=type%>
             </h1>
+            <input type="hidden" name="hide" id="hidden" value=<%=gender%>>
             <form action="" method="POST">
                 <div class="form-group">
                     <input type="text" name="username" id="" class="form-control" placeholder="Your Name...">
@@ -51,8 +52,7 @@
                     <input type="number" name="age" id="" class="form-control" placeholder="Your Age...">
                 </div>
                 <div class="form-group">
-                    <input type="number" name="weight" id="" class="form-control" placeholder="Your Weight in lbs..."
-                        >
+                    <input type="number" name="weight" id="" class="form-control" placeholder="Your Weight in kgs...">
                 </div>
                 <div class="d-flex">
                     <label for="feet">
@@ -64,6 +64,11 @@
                 </div>
                 <input type="button" name="sub" value="Submit" data-toggle="modal" data-target="#exampleModal"
                     class="btn btn-success btn-lg w-50 mt-2">
+
+                <h5 class="text-light mt-3">
+                    Need Workout plans
+                    <a href="/<%=type%>/<%=gender%>/workout-plans" style="color: blue;">Click here to check</a>
+                </h5>
             </form>
         </div>
 
