@@ -1,0 +1,29 @@
+body {
+  background-image: url("https://cdn.shopify.com/s/files/1/0212/7042/9760/products/Iron_Idols_Hosier_Lane_13_600x.jpg?v=1572833316");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  border-radius: 1px solid white;
+}
+
+.list-group .list-group-item {
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.list-group .list-group-item:hover {
+  color: white;
+  background-color: black;
+}
